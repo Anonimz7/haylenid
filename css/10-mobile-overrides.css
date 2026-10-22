@@ -1,0 +1,16 @@
+/* HP */
+@media (max-width:640px){
+  body{font-size:var(--fs-base);line-height:1.55}
+  h1{font-size:1.875rem;line-height:1.12;letter-spacing:-.02em}
+  h2{font-size:1.375rem;line-height:1.2}
+  h3,.cat h3,.prog h3,.listcard h3,.lv h3,.step h3{font-size:1rem;line-height:1.3}
+  .page-head h2{max-width:none}
+  .short{font-size:var(--fs-base);line-height:1.55}
+  .cat p,.step p,.lv p,.meta{font-size:var(--fs-sm)}
+  .tab{font-size:var(--fs-sm)}
+  .qnav a{font-size:var(--fs-xs);line-height:1.2}
+  .x-tog{font-size:var(--fs-xs);line-height:1.2}
+  .tk-track span{font-size:.6875rem}
+  .wa-float{font-size:var(--fs-xs)}
+  .total strong{font-size:1.375rem}
+}

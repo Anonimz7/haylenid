@@ -1,0 +1,25 @@
+/* ====== menu HP: rapi, berjarak, mudah disentuh ====== */
+@media (max-width:1020px){
+  header.top .bar{position:relative}
+  nav{padding:6px 16px 18px;box-shadow:0 18px 30px rgba(20,33,61,.12);max-height:calc(100vh - 70px);max-height:calc(100dvh - 70px);gap:0}
+  nav ul{gap:0}
+  nav li{border-bottom:1px solid var(--line)}
+  nav li:last-child{border-bottom:0}
+  nav .nl,nav button.nl{border-radius:12px;padding:15px 8px;font-size:var(--fs-md);min-height:52px;background:none}
+  nav .nl:hover,nav button.nl:hover{background:none}
+  nav .nl.on,nav button.nl.on{background:none;color:var(--amber-deep)}
+  nav .nl{position:relative}
+  nav .nl.on::before{content:'';position:absolute;left:-8px;top:50%;width:4px;height:18px;margin-top:-9px;border-radius:2px;background:var(--amber)}
+  nav a.nl{justify-content:flex-start}
+  nav button.nl{justify-content:space-between}
+  .caret{width:8px;height:8px;transition:transform .2s;transform:rotate(45deg) translateY(-2px)}
+  li.open>button .caret{transform:rotate(-135deg) translateY(-2px)}
+  li.open>button.nl{color:var(--amber-deep)}
+  .sub{background:none;margin:0 0 10px 8px;padding:2px 0 2px 14px;border-left:2px solid var(--amber-soft);border-radius:0}
+  .sub a{padding:11px 10px;font-size:var(--fs-base);border-radius:10px}
+  .sub a small{display:block!important;font-size:var(--fs-xs);margin-top:1px}
+  .sub a:active,.sub a:hover{background:var(--amber-soft)}
+  nav .cta-m{margin-top:14px;padding:15px 20px;font-size:var(--fs-md);width:100%}
+  .burger{width:44px;height:44px}
+}
+

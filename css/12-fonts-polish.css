@@ -1,0 +1,48 @@
+/* jenis huruf: Outfit untuk judul & angka harga (tegas, sporty, ramah), Nunito Sans untuk teks (lembut, mudah dibaca) */
+h1{font-weight:800;letter-spacing:-.02em}
+h2{font-weight:700;letter-spacing:-.01em}
+h3{font-weight:600;letter-spacing:0}
+.eyebrow,.prog .tag{font-family:var(--head);font-weight:600}
+.total strong,.cphoto span,.avatar,.step::before{font-family:var(--head)}
+.total strong{font-weight:700;letter-spacing:0}
+.cat .more,.x-tog,.qnav a{font-weight:700}
+.cta,.tab,.opt,nav .nl,nav button.nl{font-family:var(--head);font-weight:600;letter-spacing:.005em}
+.cta{font-weight:600}
+
+/* ====== penyempurnaan ====== */
+.why .card{display:flex;flex-direction:column;gap:8px}
+.why .ic{width:48px;height:48px;border-radius:16px;display:grid;place-items:center;font-size:1.4rem;margin-bottom:4px}
+.why p{font-size:var(--fs-sm);line-height:var(--lh-small);color:var(--muted)}
+.prog .desc{font-size:var(--fs-sm);line-height:var(--lh-small);min-height:2.9em}
+.prog .per{font-size:var(--fs-xs);line-height:1.4;color:var(--mint);font-weight:700;margin:-6px 0 2px;text-align:right}
+.prog .per:empty{display:none}
+.prog .per{color:#0E8F6A}
+.prog:hover{transform:translateY(-3px);transition:transform .2s}
+.card{transition:box-shadow .2s,transform .2s}
+.cat:hover{box-shadow:0 12px 30px rgba(30,80,160,.14)}
+@media (max-width:640px){
+  .why{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .why .card{padding:14px}
+  .why .ic{width:40px;height:40px;font-size:1.2rem}
+  .why p{display:block!important;font-size:var(--fs-xs);line-height:1.45}
+  .prog .desc{min-height:0}
+  #p-beranda .grid.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+  #coach .cat p,#coach .cat .more{display:none}
+}
+
+/* ikon kartu: ilustrasi SVG */
+.ic svg{width:62%;height:62%;display:block}
+.ic svg.sw{width:70%;height:auto}
+.clok{display:flex;align-items:center;justify-content:center;gap:5px}
+.clok svg{width:13px;height:13px;flex:none}
+
+.cat .ic,.why .ic{width:56px;height:56px;border-radius:18px}
+.ic svg{width:76%;height:76%}
+.ic svg.sw{width:72%;height:auto}
+@media (max-width:640px){.cats .cat .ic{width:48px;height:48px}}
+
+/* tombol WhatsApp: ikon saja */
+.wa-float{width:56px;height:56px;padding:0;justify-content:center;gap:0;border-radius:50%}
+.wa-float svg{width:30px;height:30px}
+@media (max-width:640px){.wa-float{width:52px;height:52px;padding:0}.wa-float svg{width:28px;height:28px}}
+

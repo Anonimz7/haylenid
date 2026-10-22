@@ -1,0 +1,87 @@
+/* ====== Tampilan HP: ringkas dan terstruktur ====== */
+.short,.qnav,.x-tog{display:none}
+.xb{display:flex;flex-direction:column;gap:14px}
+.x-tog{background:none;border:0;color:var(--sky);font:700 .86rem var(--body);padding:4px 0;cursor:pointer;align-self:flex-start}
+.x-tog::after{content:'▾';margin-left:6px}
+.xp.open .x-tog::after{content:'▴'}
+@media (max-width:640px){
+  body{font-size:14.5px;line-height:1.55;padding-bottom:76px}
+  h1{font-size:1.85rem}
+  h2{font-size:1.4rem}
+  h3{font-size:1.02rem}
+  .page{padding-block:20px 48px}
+  section.blk{margin-top:40px}
+  .page-head{gap:8px;margin-bottom:18px}
+  .lead,.page .note,section .note{display:none}
+  .short{display:block;color:var(--muted);font-size:.95rem}
+  .brand svg{height:36px}
+  .bar{padding-block:8px;gap:10px}
+  .sub a small{display:none}
+  /* hero */
+  .hero{gap:20px}
+  .hero-cta{margin-top:18px;flex-direction:column}
+  .hero-cta .cta{justify-content:center;width:100%}
+  .hero .chips{display:none}
+  .hero-art{padding:14px;border-radius:24px;order:-1}
+  .hero-art svg.big{max-height:150px}
+  .ticker{margin-top:24px;padding-block:9px}
+  .tk-track span{font-size:.7rem}
+  /* menu cepat */
+  .qnav{display:flex;gap:8px;overflow-x:auto;margin-top:20px;padding-bottom:4px;scrollbar-width:none}
+  .qnav::-webkit-scrollbar{display:none}
+  .qnav a{flex:none;text-decoration:none;font-weight:700;font-size:.84rem;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 14px}
+  /* kartu kategori 2 kolom, judul saja */
+  .cats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cats .cat{padding:16px;gap:8px}
+  .cats .cat p,.cats .cat .more{display:none}
+  .cats .cat .ic{width:42px;height:42px}
+  .cats .cat:last-child:nth-child(odd){grid-column:1/-1}
+  /* langkah */
+  .step p{display:none}
+  .step{align-items:center}
+  .step::before{width:34px;height:34px}
+  .split{gap:18px}
+  .band{padding:22px;border-radius:24px}
+  .band p{display:none}
+  .band .cta{width:100%;justify-content:center}
+  /* tab geser */
+  .tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{flex:none;padding:9px 15px;font-size:.86rem}
+  /* kartu */
+  .card{padding:16px;border-radius:20px}
+  .grid{gap:12px}
+  .xp:not(.open) .xb{display:none}
+  .x-tog{display:inline-flex}
+  .prog{gap:10px}
+  .listcard{gap:10px}
+  .pool{height:64px}
+  .avatar{width:52px;height:52px;font-size:1.1rem;margin-bottom:8px}
+  /* level latihan */
+  .lv{grid-template-columns:44px minmax(0,1fr);gap:12px;align-items:center}
+  .lv .n{width:44px;height:44px;border-radius:14px;font-size:1.15rem}
+  .lv p{display:none;margin-top:6px}
+  .lv.open p{display:block}
+  .lv h3::after{content:' ▾';color:var(--muted);font-size:.8rem}
+  .lv.open h3::after{content:' ▴'}
+  .levels{gap:10px}
+  .bul{gap:8px;margin-top:10px}
+  details{padding:0 16px;border-radius:16px}
+  summary{padding:14px 0;font-size:.95rem}
+  /* form */
+  .row>*{flex-basis:100%}
+  dialog{max-width:calc(100vw - 24px)}
+  .modal{padding:20px;max-height:88vh;overflow:auto}
+  /* footer */
+  footer{padding-block:24px}
+  .foot{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .foot>div:first-child{grid-column:1/-1}
+  .foot .lead{display:none}
+  .center-cta{flex-direction:column}
+  .center-cta .cta{justify-content:center;width:100%}
+  .wa-float{padding:11px 15px;font-size:.84rem}
+}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+

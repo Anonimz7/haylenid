@@ -1,0 +1,32 @@
+/* kartu coach: foto + nama */
+#coachGrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.coach-card{text-align:center;display:flex;flex-direction:column;gap:12px}
+.cphoto{position:relative;aspect-ratio:4/5;border-radius:24px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);display:grid;place-items:center}
+.cphoto span{font:800 2.25rem/1 var(--body);color:var(--ink);opacity:.35;letter-spacing:.02em}
+.cphoto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.coach-card h3{font-size:var(--fs-lg);line-height:1.3}
+.coach-card{gap:6px}.coach-card .cphoto{margin-bottom:6px}
+.clok{font-size:var(--fs-sm);line-height:1.4;color:var(--muted);font-weight:600}
+@media (max-width:980px){#coachGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){#coachGrid{gap:12px}.cphoto{border-radius:18px}.coach-card h3{font-size:var(--fs-base)}}
+
+/* foto kolam */
+.kphoto{position:relative;aspect-ratio:16/10;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:linear-gradient(180deg,var(--sky-soft),#CFE6FF)}
+.kphoto .pool{position:absolute;inset:0;height:100%;border:0;border-radius:0}
+.kphoto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.listcard h3{margin-top:2px}
+
+/* profil coach: ukuran kecil, bulat */
+#coachGrid{grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:28px 16px}
+.coach-card{align-items:center}
+.cphoto{width:120px;aspect-ratio:1/1;border-radius:50%;box-shadow:0 4px 14px rgba(30,80,160,.12)}
+.cphoto span{font-size:1.75rem}
+.coach-card h3{font-size:var(--fs-base)}
+.clok{font-size:var(--fs-xs)}
+@media (max-width:980px){#coachGrid{grid-template-columns:repeat(auto-fill,minmax(168px,1fr))}}
+@media (max-width:640px){#coachGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 12px}.cphoto{width:96px;border-radius:50%}.cphoto span{font-size:1.4rem}}
+
+/* profil coach: persegi kecil, sudut membulat ringan */
+.cphoto{width:120px;aspect-ratio:1/1;border-radius:16px}
+@media (max-width:640px){.cphoto{width:96px;border-radius:14px}}
+

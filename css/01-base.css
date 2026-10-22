@@ -1,0 +1,29 @@
+/* Layout: sticky menu bar with dropdowns, hash-routed pages, soft pastel cards on a warm-to-sky wash (same mood as the AquaFlow dashboard). */
+:root{
+  --bg:#FFFFFF; --bg2:#FFFFFF; --bg3:#F2F8FF;
+  --card:#FFFFFF; --card-soft:#F6F9FE; --line:#E4ECF7;
+  --ink:#14213D; --muted:#5E6B85;
+  --amber:#f91675; --amber-deep:#B80F55; --amber-soft:#FFE6F0;
+  --sky:#1E88F5; --sky-soft:#E6F2FF;
+  --mint:#18B98A; --mint-soft:#DFF7EE;
+  --violet:#8E57EA; --violet-soft:#F0E8FF;
+  --on-amber:#14213D; --shadow:0 8px 24px rgba(30,80,160,.08);
+  --display:'Kanit','Arial Black',sans-serif;
+  --body:'Nunito Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --head:'Outfit','Nunito Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background-color:var(--bg);background-image:linear-gradient(180deg,var(--bg) 0%,var(--bg) 70%,var(--bg3) 100%);background-attachment:fixed;color:var(--ink);font:400 15px/1.65 var(--body);padding-inline:0}
+a{color:inherit}
+h1,h2,h3{line-height:1.15;text-wrap:balance;margin:0}
+h1{font-weight:800;font-size:clamp(2.1rem,5.4vw,3.6rem);letter-spacing:-.02em}
+h2{font-weight:800;font-size:clamp(1.55rem,3.4vw,2.2rem);letter-spacing:-.01em}
+h3{font-weight:700;font-size:1.1rem}
+p{margin:0}
+.wrap{width:100%;max-width:1120px;margin-inline:auto;padding-inline:16px}
+.eyebrow{font-size:.74rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--amber-deep)}
+.lead{font-size:1.06rem;color:var(--muted);max-width:60ch}
+:focus-visible{outline:3px solid var(--sky);outline-offset:2px;border-radius:8px}
+

@@ -1,0 +1,19 @@
+/* program */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.tab{font:700 .9rem var(--body);border:1px solid var(--line);background:var(--card);color:var(--ink);padding:10px 18px;border-radius:999px;cursor:pointer}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.prog{display:flex;flex-direction:column;gap:14px}
+.prog .tag{align-self:flex-start;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px}
+.prog .desc{color:var(--muted);font-size:.9rem}
+.prog ul{margin:0;padding-left:18px;color:var(--muted);font-size:.88rem}
+.stepper{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:.88rem;font-weight:600}
+.stepper .ctrl{display:flex;align-items:center;gap:10px;font-variant-numeric:tabular-nums}
+.stepper button{width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:var(--card-soft);color:var(--ink);font-size:1.1rem;cursor:pointer;line-height:1}
+.stepper button:hover{background:var(--amber-soft)}
+.stepper output{min-width:1.5ch;text-align:center}
+.total{display:flex;justify-content:space-between;align-items:baseline;border-top:1px dashed var(--line);padding-top:12px;margin-top:auto;font-variant-numeric:tabular-nums}
+.total strong{font-size:1.25rem}
+.total span{color:var(--muted);font-size:.84rem}
+.prog .cta{justify-content:center;width:100%}
+.note{font-size:.82rem;color:var(--muted);margin-top:18px}
+

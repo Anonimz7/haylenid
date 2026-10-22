@@ -1,0 +1,12 @@
+/* gambar utama hero: foto JPG/PNG menutupi area, logo jadi cadangan */
+.hero-art{aspect-ratio:450/384;display:grid;place-items:center}
+.hero-art .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.hero-art.has-img{padding:0;background:var(--sky-soft)}
+.hero-art.has-img svg.big{visibility:hidden}
+@media (max-width:640px){.hero-art{aspect-ratio:16/10}.hero-art.has-img{padding:0}}
+
+/* header: transparan di atas, blur kaca saat halaman di-scroll */
+header.top{background:transparent;-webkit-backdrop-filter:none;backdrop-filter:none;border-bottom-color:transparent;transition:background-color .25s ease,backdrop-filter .25s ease,-webkit-backdrop-filter .25s ease,border-color .25s ease,box-shadow .25s ease}
+header.top.scrolled{background:color-mix(in srgb,var(--bg) 62%,transparent);-webkit-backdrop-filter:saturate(1.6) blur(16px);backdrop-filter:saturate(1.6) blur(16px);border-bottom-color:color-mix(in srgb,var(--line) 80%,transparent);box-shadow:0 6px 24px rgba(20,33,61,.06)}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){header.top.scrolled{background:var(--bg)}}
+@media (prefers-reduced-motion:reduce){header.top{transition:none}}

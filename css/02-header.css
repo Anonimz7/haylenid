@@ -1,0 +1,35 @@
+/* header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:16px;padding-block:10px}
+.brand{display:flex;align-items:center;text-decoration:none;flex:none}
+.brand svg{height:46px;width:auto;display:block}
+nav{margin-left:auto;display:flex;align-items:center;gap:4px}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:2px;align-items:center}
+nav li{position:relative}
+nav .nl,nav button.nl{font:600 .9rem var(--body);color:var(--ink);background:none;border:0;padding:9px 11px;border-radius:999px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+nav .nl:hover,nav button.nl:hover,nav .nl.on{background:var(--amber-soft)}
+.caret{width:9px;height:9px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px)}
+.sub{display:none;position:absolute;top:100%;left:0;min-width:230px;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:8px;z-index:5}
+.sub a{display:block;padding:9px 12px;border-radius:10px;text-decoration:none;font-weight:600;font-size:.9rem}
+.sub a small{display:block;font-weight:400;color:var(--muted);font-size:.78rem}
+.sub a:hover{background:var(--amber-soft)}
+li.open>.sub{display:block}
+@media (hover:hover) and (min-width:1021px){li:hover>.sub{display:block}}
+.cta{background:var(--amber);color:var(--on-amber);font:700 .92rem var(--body);border:0;border-radius:999px;padding:11px 20px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;cursor:pointer;box-shadow:0 6px 16px rgba(249,22,117,.35)}
+.cta:hover{filter:brightness(1.05)}
+.ghost{background:var(--card);color:var(--ink);border:1px solid var(--line);box-shadow:none}
+.tools{display:flex;align-items:center;gap:8px}
+.icon-btn{width:40px;height:40px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;display:grid;place-items:center;font-size:1rem}
+.burger{display:none}
+@media (max-width:1020px){
+  .burger{display:grid;margin-left:auto}
+  nav{position:absolute;left:0;right:0;top:100%;background:var(--bg);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;padding:8px 16px 16px;display:none;margin:0;max-height:75vh;overflow:auto}
+  nav.open{display:flex}
+  nav ul{flex-direction:column;align-items:stretch}
+  nav .nl,nav button.nl{width:100%;justify-content:space-between;padding:12px 14px}
+  .sub{position:static;box-shadow:none;border:0;background:var(--card-soft);margin:2px 0 6px}
+  header .tools .cta{display:none}
+  nav .cta-m{display:inline-flex;justify-content:center;margin-top:8px}
+}
+@media (min-width:1021px){nav .cta-m{display:none}}
+
